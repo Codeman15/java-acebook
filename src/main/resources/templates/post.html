@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Post to Acebook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Post</h1>
+<form action="#" th:action="@{/post}" th:object="${newPost}" method="post">             //action specifys the url to pass the form to. It will send a post request to /post. newPost is from HomeController
+    <p>Post: <textarea type="text" th:field="*{content}" /></p>                         //content is a PostForm attribute (variable)
+    <p><input type="submit" value="Submit Post" /> <input type="reset" value="Delete Post" /></p>
+</form>
+</body>
+</html>
