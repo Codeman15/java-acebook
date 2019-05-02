@@ -21,9 +21,11 @@ class Posts extends React.Component {
 	}
 
   getPosts() {
-    return this.props.posts.map(post =>
-			<Post key={post._links.self.href} post={post}/>
-		);
+    return this.props.posts.sort( function(a, b){               //orders the posts by newest
+    return new Date(b.time_stamp) - new Date(a.time_stamp);
+    }).map(post =>
+        <Post key={post._links.self.href} post={post}/>         //displays the posts
+	);
   }
 }
 
