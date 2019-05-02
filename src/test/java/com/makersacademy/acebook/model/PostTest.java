@@ -21,6 +21,6 @@ public class PostTest {
 	}
 
 	@Test
-	public void postHasDate() {assertThat(post.getDate(), containsString(dateFormat.format(date)));}
+	public void postHasDate() {assertThat(post.getTime_stamp(), containsString(dateFormat.format(date)));}
 
 }

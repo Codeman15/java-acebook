@@ -33,8 +33,4 @@ public class Post {
         this.time_stamp = dateFormat.format(date);
     }
 
-    public String getDate() {
-        return time_stamp;
-    }
-
 }
