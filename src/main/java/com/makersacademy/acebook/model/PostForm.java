@@ -4,15 +4,15 @@ public class PostForm {
 
     private String content; //class attribute (variable)
 
-    public PostForm(String blah) {
-        this.content = blah;
+    public PostForm(String postFormContent) {
+        this.content = postFormContent;
     }
 
     public String getContent() {
         return content;
     }
 
-    public void setContent(String blah) { //void as not returning anything
-        this.content = blah;
-    }
+//    public void setContent(String beans) { //setter. void as not returning anything. not actually currently being used
+//        this.content = beans;
+//    }
 }
