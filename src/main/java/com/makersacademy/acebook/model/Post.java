@@ -13,12 +13,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Data
-@Entity
+@Entity                //creates the API
 @Table(name = "POSTS") //database table is called posts
 public class Post {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //makes the id below incremental
     private Long id;
     private String content;
     private String time_stamp;
